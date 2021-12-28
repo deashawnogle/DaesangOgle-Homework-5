@@ -74,15 +74,3 @@ textarea {
   background-color: yellowgreen;
 }
 
-.clearBtn {
-  background-color: white;
-  border-radius: 6px;
-  border: 3px solid black;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-}
-
-.clearBtn:hover{
-  background-color:wheat;
-} 

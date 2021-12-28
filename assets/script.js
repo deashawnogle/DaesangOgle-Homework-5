@@ -2,14 +2,16 @@
 
     //variables
     const saveButton = $('.saveBtn');
+    
+    //display current time, set time
     const currentTime = moment().format("ddd MM Do");
-
     $('#currentDay').text(moment().format('LLLL'));
 
     const date = new Date();
     const hour = date.getHours();
     const todo = localStorage.getItem('todo') ? JSON.parse(localStorage.getItem('todo')) : {};
 
+    //timeblock function(display timeblocks 9am-6pm)
     function createElement() {
         for (let i = 9; i < 19; i++) {
             $(".container").append(`
@@ -19,6 +21,7 @@
                       <button data-id="${i}" class="saveBtn col-2">Save</button>
                   </div>`)
         }
+        //event listener for save button in local storage
         $('.saveBtn').on("click", function(){
             let dataId = $(this).attr("data-id")
             let textarea = $("#" + dataId).val()
@@ -40,9 +43,3 @@
 
     showText()
 
-// //title
-// // const titleEl = $('h1');
-
-// // // titleEl.text('Work Day Scheduler');
-// // titleEl.addClass('p-5');
-// // titleEl.css('border', 'rgb(122, 242, 242) 5px solid');
