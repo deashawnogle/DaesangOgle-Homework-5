@@ -32,6 +32,7 @@
 
     createElement()
 
+    //keep text is displaying from localstorage after refresh
     function showText() {
         for (let i = 9; i < 19; i++) {
             if (localStorage.getItem(i)){
@@ -42,4 +43,3 @@
     }
 
     showText()
-
