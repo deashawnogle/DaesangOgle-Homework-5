@@ -4,7 +4,7 @@
 
 ## Image Preview
 
-<img src="./assets/img/Workday.png">
+<img src = "./assets/Workday.png">
 
 ------------------
 
@@ -19,6 +19,10 @@ Day Scheduler organize schedule for a day with time
 - HTML, CSS, Bootstrap for styling Page 
 - Javascript
 - JQuery
+- JSon for Local Storage
+- BootStrap for styling time block
+
+
 
 
 --------------------
